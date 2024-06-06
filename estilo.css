@@ -49,6 +49,7 @@ h1 {
     font-size: 3rem;
     color: green;
     text-shadow: 2px 2px 2px black;
+    margin-top: 0;
      
 }
 
@@ -94,17 +95,18 @@ input::placeholder {
     letter-spacing: 1px;
     font-size: 1.2rem;
     /*background-color: color-mix(in srgb, rgba(255, 0, 0, 0.795), white);    border: none;*/
-    background-color: green;
+    background-color: rgb(10, 179, 10);
     cursor: pointer;
     padding: 1rem;
     /*margin: 1rem;*/
-    border-radius: 3px;
+    border-radius: 15px;
         
 
 }
 
 .btnCalcular:hover {
     background-image: var(--cor_principal);
+    transform: scale(1.1);
 }
 
 
@@ -112,9 +114,9 @@ input::placeholder {
 h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    margin-top: .2rem;
-    color: red;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    color: green;
 
 }
 
@@ -135,6 +137,7 @@ footer {
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
+    opacity: .7;
        
 }
 
@@ -143,10 +146,7 @@ footer {
 @media screen and (max-width: 52.81em) {
     /*845px*/
 
-    body {
-
-    }
-
+  
     .container {
         /*width: 60%;*/
         width: 50vw;
@@ -167,8 +167,8 @@ footer {
     h1 {
         text-align: center;
         font-size: 2rem;
-        margin-bottom: 0;
-        margin-top: -2rem;
+        margin-bottom: 1rem;
+        margin-top: -5rem;
         
 
     }
@@ -203,25 +203,28 @@ footer {
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
         letter-spacing: 1px;
-        font-size: 1rem;
+        font-size: .8rem;
         cursor: pointer;
         padding: .5rem;
-        /*margin-top: .8rem;*/
-        /*margin-bottom: .8rem;*/
-        border-radius: 3px;
+       
             
     
     }
 
+    /*Resultado*/
     h2 {
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 1rem;
+        font-size: .9rem;
         margin-top: .8rem;
     
     }
 
-          
+    footer {
+        padding-bottom: 1rem;
+        font-size: .6rem;
+    }
    
+            
     
 }
