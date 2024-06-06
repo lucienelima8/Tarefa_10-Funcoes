@@ -1,3 +1,8 @@
+:root {
+    --cor_principal: linear-gradient( rgb(74, 199, 230), rgb(85, 206, 85), rgb(238, 238, 55));
+
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
@@ -5,9 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient( rgb(119, 119, 247), rgb(85, 206, 85), rgb(238, 238, 55));
-    /*background-image: linear-gradient(rgb(0, 0, 255), rgba(0, 128, 0, 0.856));*/
-    /*background-color: #f8f6fc;*/
+    background-image: var(--cor_principal);
     color: #000000;
     min-height: 100vh;
     flex-direction: column;
@@ -44,7 +47,8 @@ h1 {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 3rem;
-    color: black;
+    color: green;
+    text-shadow: 2px 2px 2px black;
      
 }
 
@@ -75,6 +79,11 @@ h1 {
      
 }
 
+input::placeholder {
+    font-size: 1rem;
+    text-align: center;
+    color: #acaaaa;
+}
 
 
 /*Calcular*/
@@ -85,7 +94,7 @@ h1 {
     letter-spacing: 1px;
     font-size: 1.2rem;
     /*background-color: color-mix(in srgb, rgba(255, 0, 0, 0.795), white);    border: none;*/
-    background-color: rgb(236, 52, 52);
+    background-color: green;
     cursor: pointer;
     padding: 1rem;
     /*margin: 1rem;*/
@@ -94,21 +103,26 @@ h1 {
 
 }
 
+.btnCalcular:hover {
+    background-image: var(--cor_principal);
+}
+
 
 /*Resultado*/
 h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
-    color: rgb(16, 236, 16);
     margin-top: .2rem;
+    color: red;
 
 }
 
 
 footer {
     font-size: 11px;
-    text-shadow: 2px 2px 2px black;
+    /*text-shadow: 2px 2px 2px black;*/
+    font-weight: bold;
     letter-spacing: 2px; 
     align-items: center;
     justify-content: center;
@@ -126,8 +140,8 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media screen and (max-width: 50em) {
-    /*800px*/
+@media screen and (max-width: 52.81em) {
+    /*845px*/
 
     body {
 
@@ -154,6 +168,8 @@ footer {
         text-align: center;
         font-size: 2rem;
         margin-bottom: 0;
+        margin-top: -2rem;
+        
 
     }
 
@@ -173,6 +189,12 @@ footer {
         border: none;
         font-weight: bold;
          
+    }
+
+    input::placeholder {
+        font-size: .8rem;
+        text-align: center;
+        color: #acaaaa;
     }
 
     
@@ -195,12 +217,11 @@ footer {
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
         font-size: 1rem;
-        color: rgb(16, 236, 16);
         margin-top: .8rem;
     
     }
 
-        
+          
    
     
 }
