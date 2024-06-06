@@ -32,12 +32,11 @@ main {
 	/*background: rgba(83, 83, 248, 0.61);*/
 	/*background: #262626;*/
 	padding: 80px;
-    color: #fff;
+    /*color: #fff;*/
 	text-align: center;
 	border-radius: 15px;
     height: 70vh;
     justify-content: center;
-
     
 
 }
@@ -59,16 +58,9 @@ h1 {
 
 }
 
-/*Box entrada de números*/
-/*input[type=number] {
-
-}
 
 /*Box dos números*/
 #num1, #num2, #num3, #num4, #num5{
-    /*display: block;*/
-    /*text-align: center;*/
-    /*align-items: center;*/
     margin-top: .5rem;
     font-size: 2rem;
     font-weight: 1rem;
@@ -80,10 +72,13 @@ h1 {
      
 }
 
+
 input::placeholder {
     font-size: 1rem;
     text-align: center;
     color: #acaaaa;
+  
+
 }
 
 
