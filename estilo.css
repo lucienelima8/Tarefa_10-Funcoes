@@ -1,0 +1,206 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( rgb(119, 119, 247), rgb(85, 206, 85), rgb(238, 238, 55));
+    /*background-image: linear-gradient(rgb(0, 0, 255), rgba(0, 128, 0, 0.856));*/
+    /*background-color: #f8f6fc;*/
+    color: #000000;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    width: 40vw;
+    /*height: 90vh;*/
+	/*width: 600px;*/
+    position: absolute;
+    align-items: center;
+	top: 40%;
+	/*left: 50%;*/
+	transform: translate(-50%, -50%);
+	/*background: rgba(83, 83, 248, 0.61);*/
+	/*background: #262626;*/
+	padding: 80px;
+    color: #fff;
+	text-align: center;
+	border-radius: 15px;
+    height: 70vh;
+    justify-content: center;
+
+    
+
+}
+
+/*Título*/
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    color: black;
+     
+}
+
+/*Ícone calculadora*/
+.fa-duotone, .fa-calculator-simple {
+    font-size: 1rem;
+
+}
+
+/*Box entrada de números*/
+/*input[type=number] {
+
+}
+
+/*Box dos números*/
+#num1, #num2, #num3, #num4, #num5{
+    /*display: block;*/
+    /*text-align: center;*/
+    /*align-items: center;*/
+    margin-top: .5rem;
+    font-size: 2rem;
+    font-weight: 1rem;
+    border-radius: 15px;
+    border: none;
+    color: green;
+    font-weight: bold;
+    text-align: right;
+     
+}
+
+
+
+/*Calcular*/
+.btnCalcular {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    /*background-color: color-mix(in srgb, rgba(255, 0, 0, 0.795), white);    border: none;*/
+    background-color: rgb(236, 52, 52);
+    cursor: pointer;
+    padding: 1rem;
+    /*margin: 1rem;*/
+    border-radius: 3px;
+        
+
+}
+
+
+/*Resultado*/
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: rgb(16, 236, 16);
+    margin-top: .2rem;
+
+}
+
+
+footer {
+    font-size: 11px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /*height: 4vh;*/
+    /*background-color: #c0bebeaf;*/
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+       
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 50em) {
+    /*800px*/
+
+    body {
+
+    }
+
+    .container {
+        /*width: 60%;*/
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #fff;
+        
+        
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 0;
+
+    }
+
+    .fa-duotone, .fa-calculator-simple {
+        font-size: 1rem;
+            
+    }
+
+
+
+    #num1, #num2, #num3, #num4, #num5 {
+        align-items: center;
+        margin-top: .5rem;
+        font-size: 1rem;
+        font-weight: 1rem;
+        border-radius: 15px;
+        border: none;
+        font-weight: bold;
+         
+    }
+
+    
+    .btnCalcular {
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: .5rem;
+        /*margin-top: .8rem;*/
+        /*margin-bottom: .8rem;*/
+        border-radius: 3px;
+            
+    
+    }
+
+    h2 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        color: rgb(16, 236, 16);
+        margin-top: .8rem;
+    
+    }
+
+        
+   
+    
+}
