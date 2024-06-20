@@ -7,7 +7,7 @@ function calcular () {
 
     const media = (num1 + num2 + num3 + num4 + num5) / 5;
 
-    document.getElementById('resultArea').innerHTML = `Sua média aritmética é: ` + media;
+    document.getElementById('resultArea').innerHTML = `Sua média aritmética é: ` + media.toFixed(2);
 
 }
 
